@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z Layoutem</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        .window {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-<table width=95% border="1" align="center">
-  <tr>
-    <td width=18% align="center">
-      <a href="http://www.kuratorium.gda.pl" target="strony">Kuratorium</a>
-      <br>
-      <a href="https://zse.edu.gdansk.pl/pl" target="strony">ZSE Gdańsk</a>
-    </td>
-    <td align=center><iframe width=650 height=650 name="strony" src="start.html" border="0"></iframe>
-    </td>
-    <td width=18% align="center"><a href="start.html" target="strony">Start</a>
-    </td>
-  </tr>
-</table>
+
+    <header>
+        <h1>NAGŁÓWEK</h1>
+    </header>
+
+    <div class="container">
+        <div class="window">
+            <h2>OKNO 1</h2>
+            <p>Treść okna 1</p>
+        </div>
+
+        <div class="window">
+            <h2>OKNO 2</h2>
+            <p>Treść okna 2</p>
+        </div>
+
+        <div class="window">
+            <h2>OKNO 3</h2>
+            <p>Treść okna 3</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>STOPKA</p>
+    </footer>
+
 </body>
 </html>
